@@ -1,0 +1,7 @@
+the files :
+  r.html                  //result page
+  q.html                  //quiz page
+  index.html              //home page
+  AvengeroRegular-zvgl    //font file
+  
+all need to be downloaded in the folder 'templates' in the project directory
