@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: 'AvengeroRegular';
+            src: url(AvengeroRegular-zvgl.ttf) format('truetype');
+            }
+        body {
+            background-color: black;
+          background-image: url('https://cdn.steamstatic.com/steamcommunity/public/images/items/997070/6704338131eac5f8ab62a23153e5d5c8712393b1.jpg');
+          position:fixed;
+            background-repeat: no-repeat;
+            background-size:100vw 150vh
+        }
+        body{
+            font-family: 'AvengeroRegular',Avengero,fantasy;
+        }
+        </style>
+    <title>Avengers Quiz Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; justify-content: center;">
+            <div>
+                <h1 style="font-family: 'AvengeroRegular',Avengero,fantasy;color: darkgray; font-size: 58px; margin-left: 230px;"class="mt-4">YOUR AVENGER TWIN IS</h1>
+                {% if avenger %}
+                   <i> <p style="font-family: 'AvengeroRegular',Avengero,fantasy;color: rgb(190, 3, 3); font-size: 64px; text-align: center; margin-left: 50px" class="mt-4"> {{ avenger }}</p></i>
+                   
+                   {% if avenger == 'Iron Man' %}
+                        <img src="https://img4.goodfon.com/wallpaper/nbig/3/77/iron-man-zheleznyi-chelovek-kostium-chernyi-fon-komiks-marve.jpg" alt="Iron Man" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                   {% elif avenger == 'Captain America' %}
+                        <img src="https://wallpapers.com/images/hd/1366x768-captain-america-background-z5zjc7659hyn0hw2.jpg" alt="Captain America" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                   {% elif avenger == 'Black Widow' %}
+                        <img src="https://i.pinimg.com/736x/7b/fe/cf/7bfecf6db1663e4b86fa6dc03e3306e0.jpg" alt="Black Widow" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                   {% elif avenger == 'Thor' %}
+                        <img src="https://downloadwap.com/thumbs2/wallpapers/p2/2019/movies/12/c70ac0cf13622136.jpg" alt="Thor" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                   {% elif avenger == 'Hulk' %}
+                        <img src="https://c4.wallpaperflare.com/wallpaper/22/74/535/hulk-wallpaper-preview.jpg" alt="Hulk" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Black Panther' %}
+                        <img src="https://img5.goodfon.com/wallpaper/big/d/b1/fon-ozherele-maska-chiornyi-fon-komiks-marvel-comics-chiorna.jpg" alt="Black Panther " width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Spider-Man' %}
+                        <img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/94/Spider-Man_Red_and_Blue.jpg" alt="Spider-Man" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Doctor Strange' %}
+                        <img src="https://c4.wallpaperflare.com/wallpaper/683/332/878/doctor-strange-avengers-endgame-avengers-infinity-war-marvel-heroes-hd-wallpaper-preview.jpg" alt="Doctor Strange" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Captain Marvel' %}
+                        <img src="https://img5.goodfon.com/wallpaper/nbig/f/94/kapitan-marvel-captain-marvel-fantastika-komiks-marvel-chern.jpg" alt="Captain Marvel" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Scarlet Witch' %}
+                        <img src="https://wallpaperaccess.com/full/1089841.jpg" alt="Scarlet Witch" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Hawkeye' %}
+                        <img src="https://p7.hiclipart.com/preview/834/131/791/jeremy-renner-clint-barton-black-widow-thor-captain-america-hawkeye.jpg" alt="Hawkeye" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Nick Fury' %}
+                        <img src="https://wallpapers.com/images/hd/marvel-nick-fury-samuel-l-jackson-on-black-background-micsgv53te397jaq.jpg" alt="Nick Fury" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Ant-Man' %}
+                        <img src="https://wallpapersmug.com/download/1024x768/003d80/superhero-ant-man-artwork.jpg" alt="Ant-Man" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Wasp' %}
+                        <img src="https://wallpapercave.com/wp/wp7070897.jpg" alt="Wasp" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Vision' %}
+                        <img src="https://wallpaperaccess.com/full/2883021.jpg" alt="Vision" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'Falcon' %}
+                        <img src="https://c4.wallpaperflare.com/wallpaper/138/12/943/5k-sam-wilson-marvel-comics-falcon-wallpaper-preview.jpg" alt="Falcon" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                    {% elif avenger == 'War Machine' %}
+                        <img src="https://wallpaperaccess.com/full/1135490.jpg" alt="War Machine" width="200px" height="200px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+        
+                  
+                   {% endif %}
+                {% else %}
+                <i> <p style="font-family: 'AvengeroRegular',Avengero,fantasy;color: rgb(190, 3, 3); font-size: 64px; text-align: center; margin-left: 60px" class="mt-4"> Happy </p></i>
+                <img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7b/Happy_Hogan_Endgame_Textless.jpg" alt="Happy" width="300px" height="300px" 
+                        style="display: block; margin-left: auto; margin-right: auto;">
+                        
+                {% endif %}            
+            </div>
+    
+            <div>
+                <button onclick="location.href='/'" style="font-family: 'AvengeroRegular',Avengero,fantasy; background-color: red; color: aliceblue; height: 40px; width:160px; align-items: center;">Retake Quiz</button>
+            </div>
+            
+        </div>
+       
+    </div>
+
+   
+   
+</body>
+</html>
