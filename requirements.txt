@@ -1,0 +1,5 @@
+Flask:
+  pip install flask
+ 
+AvengeroRegular-zvgl -- truetype file or any other font you prefer from:
+    https://www.fontspace.com/category/avengers
